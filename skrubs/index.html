@@ -9,7 +9,12 @@ Rasputin
 <body>
 <script>
 	window.onload = function() {
-		responsiveVoice.speak("There lived a certain man in Russia long ago
+		responsiveVoice.speak(document.getElementById("raratext").innerHTML);
+		document.getElementById("raratext").style.display = "none";
+	}
+</script>
+<p id="raratext">
+	There lived a certain man in Russia long ago
 He was big and strong, in his eyes a flaming glow
 Most people looked at him with terror and with fear
 But to Moscow chicks he was such a lovely dear
@@ -61,9 +66,8 @@ They didn't quit, they wanted his head
 Ra ra Rasputin
 Russia's greatest love machine
 And so they shot him 'til he was dead
-Oh, those Russians");
-	}
-</script>
+Oh, those Russians
+	</p>
 <div>
 <h1>
 Ra Ra Rasputin
